@@ -1,0 +1,16 @@
+DOC CCCD -> SO KHAI BAO LUU TRU
+===============================
+
+1. Giai nen file DocCCCD-Windows.zip vao mot thu muc (vi du Desktop).
+2. Mo thu muc DocCCCD, bam dup vao DocCCCD.exe.
+   - Lan dau Windows co the hien "Windows protected your PC":
+     bam "More info" -> "Run anyway".
+   - Mot cua so den hien ra: GIU NGUYEN cua so nay trong luc dung.
+3. Trinh duyet tu mo trang ung dung (neu khong, mo http://localhost:8501).
+4. Chon anh CCCD / ho chieu (hoac duong dan thu muc anh) -> bam "Doc anh".
+5. Kiem tra cac dong "Can kiem tra", sua so phong / ngay den neu can.
+6. O phan "Xuat Excel": chon file Excel dang dung (neu muon ghi tiep),
+   roi bam "Tai file Excel".
+7. Dung xong: dong cua so den de tat ung dung.
+
+Ung dung chay hoan toan tren may, khong gui anh di dau, khong can mang.

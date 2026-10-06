@@ -19,7 +19,9 @@ import numpy as np
 
 from .qr import IdRecord
 
-WEIGHTS = Path(__file__).resolve().parent.parent / "models" / "vgg_transformer.pth"
+MODELS = Path(__file__).resolve().parent.parent / "models"
+WEIGHTS = MODELS / "vgg_transformer.pth"
+CONFIG = MODELS / "vgg_transformer.yml"
 
 _viet = None
 _viet_lock = threading.RLock()
@@ -32,7 +34,9 @@ def _vietocr():
             from vietocr.tool.config import Cfg
             from vietocr.tool.predictor import Predictor
 
-            cfg = Cfg.load_config_from_name("vgg_transformer")
+            # Cấu hình lưu sẵn trong models/ (load_config_from_name tải từ mạng mỗi lần chạy)
+            cfg = Cfg.load_config_from_file(str(CONFIG)) if CONFIG.exists() \
+                else Cfg.load_config_from_name("vgg_transformer")
             cfg["device"] = "cpu"
             cfg["cnn"]["pretrained"] = False
             cfg["predictor"]["beamsearch"] = False
