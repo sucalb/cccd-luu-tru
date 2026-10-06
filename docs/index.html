@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Đọc CCCD → Sổ lưu trú</title>
+<style>
+  :root { --bg:#f7f7f5; --fg:#1d1d1b; --muted:#5f5f5a; --card:#fff; --line:#e3e3df; --accent:#b4232c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141413; --fg:#ecebe6; --muted:#a3a29b; --card:#1e1e1c; --line:#33332f; --accent:#ef6b6b; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 8px; }
+  .lead { color:var(--muted); margin:0 0 32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-bottom:32px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card span { color:var(--muted); font-size:.95rem; }
+  ol { padding-left:20px; }
+  code { background:var(--card); border:1px solid var(--line); border-radius:4px; padding:1px 5px; }
+  .note { border-left:3px solid var(--accent); padding:4px 12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Đọc CCCD → Sổ khai báo lưu trú</h1>
+  <p class="lead">Ứng dụng chạy trên máy tính, đọc ảnh CCCD và hộ chiếu rồi điền vào file Excel sổ lưu trú. Ảnh không rời khỏi máy.</p>
+  <div class="grid">
+    <div class="card"><b>QR trên CCCD</b><span>Họ tên, ngày sinh, giới tính, số CCCD, nơi thường trú — chính xác tuyệt đối.</span></div>
+    <div class="card"><b>Không có QR</b><span>Đọc chữ in trên thẻ (OCR tiếng Việt), đối chiếu năm sinh và giới tính với số CCCD.</span></div>
+    <div class="card"><b>Hộ chiếu</b><span>Đọc dòng MRZ có chữ số kiểm tra, ghi vào sheet khách nước ngoài.</span></div>
+    <div class="card"><b>Nhiều thẻ một ảnh</b><span>Ảnh chụp chung 3–4 thẻ vẫn tách được từng người.</span></div>
+  </div>
+  <h2>Cách dùng</h2>
+  <ol>
+    <li>Tải mã nguồn về máy, bấm đúp <code>Chay ung dung.command</code> (Mac).</li>
+    <li>Chọn ảnh hoặc thư mục ảnh, bấm <b>Đọc ảnh</b>.</li>
+    <li>Sửa số phòng / ngày đến nếu cần, rồi tải file Excel (hoặc ghi tiếp vào file đang dùng).</li>
+  </ol>
+  <p class="note">Ứng dụng xử lý giấy tờ tuỳ thân nên chỉ chạy trên máy của bạn — trang này chỉ là trang giới thiệu.</p>
+</main>
+</body>
+</html>

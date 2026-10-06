@@ -1,0 +1,10 @@
+opencv-contrib-python-headless
+streamlit
+openpyxl
+pillow>=11.1
+pillow-heif
+pandas
+rapidocr-onnxruntime
+torch
+torchvision
+vietocr

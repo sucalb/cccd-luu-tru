@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# Trọng số OCR 150MB (vượt giới hạn 100MB của GitHub) - app tự tải khi chạy lần đầu
+models/*.pth
+# Không bao giờ commit ảnh giấy tờ / file Excel có dữ liệu khách thật
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.xlsx
+!template.xlsx
+.claude/
